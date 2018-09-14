@@ -63,6 +63,13 @@ img {
 }
 /* Navigation End */
 
+/* Main Information */
+.page-title{
+  padding: 1.5rem 0 0 0;
+  margin: none;
+  border-bottom: 1px dotted black;
+}
+
 /* Top Container start */
 .site {
   display: grid;
@@ -79,17 +86,18 @@ a {
   font-size: 10px;
 }
 
-.showcase {
-  grid-area: showcase;
-  min-height: 400px;
-  background: url("http://kingdomcolor.info/wp-content/uploads/2018/05/download-simple-world-map-with-countries-stock-vector-illustration-of-earth-planet-image-name.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
+.main-content-left {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 1.5rem 0 0 0;
+  border-bottom: 1px dotted black;
+}
+
+.main-content-right {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  padding: 1.5rem 0 0 0;
+  border-bottom: 1px dotted black;
 }
 
 /* Top Container End */
@@ -99,8 +107,8 @@ a {
 
 footer {
   margin-top: 2rem;
-  background: var(--footer);
-  color: var(--light);
+  background: none;
+  color: var(--dark);
   text-align: center;
   padding: 1rem;
 }
